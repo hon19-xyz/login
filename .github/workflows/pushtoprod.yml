@@ -1,13 +1,12 @@
 on: [push]
 
 jobs:
-  check-quality:
+  delivering:
     runs-on: ubuntu-latest
     name: A job to check my code quality
     steps:
-    - name: Check code meets quality standards
-      id: code-inspector
-      uses: codeinspectorio/github-action@master
+    - name: pushing to webserver
+      uses: easingthemes/ssh-deploy@v2.1.5
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         code_inspector_access_key: ${{ secrets.CODE_INSPECTOR_ACCESS_KEY }}
@@ -19,3 +18,5 @@ jobs:
         max_long_functions_rate: '0.0001'
         project_name: ''
         max_timeout_sec: '600'
+- name: ssh deploy
+  uses: easingthemes/ssh-deploy@v2.1.5
