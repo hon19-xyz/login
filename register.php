@@ -90,7 +90,7 @@ if(isset($_GET['register'])) { //checking if "?register=1" is set in the url. us
         
         //this is the giant mysql statement placing everything from the user input in the database:
         //(also we're placing "isadmin"="0" & "activated"="0" at this point.)
-        $statement = $pdo->prepare("INSERT INTO users (email, username, givenName, activated, isadmin, lastName, password) VALUES (:email, :username, :givenName, '0', '0', :lastName, :password)");
+        $statement = $pdo->prepare("INSERT INTO users (email, username, givenName, activated, lives_here, isadmin, lastName, password) VALUES (:email, :username, :givenName, '0', '0', '0', :lastName, :password)");
         $result = $statement->execute(array('email' => $email, 'username' => $username, 'givenName' => $givenName, 'lastName' => $lastName, 'password' => $password_hash));
         
         if($result) {        

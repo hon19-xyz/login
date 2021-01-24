@@ -10,6 +10,7 @@ CREATE TABLE `users` (
   `activationcode` VARCHAR(255) NULL ,
   `activationcode_time` TIMESTAMP NULL ,
   `activated` VARCHAR(1) NOT NULL ,
+  `lives_here` VARCHAR(1) NOT NULL ,
   `isadmin` VARCHAR(1) NULL ,
   `passwordcode` VARCHAR(255) NULL ,
   `passwordcode_time` TIMESTAMP NULL ,
