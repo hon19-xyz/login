@@ -15,7 +15,7 @@ $activated = $_SESSION['activated'];
     <meta name="author" content="">
 
 
-    <title>Login POC</title>
+    <title>Login to Home Control</title>
 
 
     <link href="ressources/css/bootstrap.min.css" rel="stylesheet">
@@ -25,10 +25,10 @@ $activated = $_SESSION['activated'];
   <body>
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Crappy Login POC</h5>
+      <h5 class="my-0 mr-md-auto font-weight-normal">hon19.xyz Control Center</h5>
       <nav class="my-2 my-md-0 mr-md-3">
 
-        <a class="p-2 text-dark" href="https://github.com/td00/loginpagefoo">Git</a>
+        <a class="p-2 text-dark" href="https://github.com/hon19-xyz/login">Git</a>
         <?php
       if($userid > 0){ //if the user is logged in (has a userid above 0) then print this:
         echo 'Hi <a href="me.php">'.$_SESSION['username'].'</a>';  
@@ -50,8 +50,8 @@ $activated = $_SESSION['activated'];
     echo '<div class="alert alert-danger" role="alert">Your account isnt activated yet!</div><br>';
 }?>
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">loginpagefoo POC (PHP & MySQL)</h1>
-      <p class="lead">Just a crappy POC written in PHP using PHP, HTML & MySQL.</p>
+      <h1 class="display-4">hon19.xyz Control Center</h1>
+      <p class="lead">Just a crappy Control Center for our home.</p>
     </div>
 
     <div class="container">
@@ -173,22 +173,12 @@ if ($isadmin == 1) { //if admin rights are granted, print a admin area button
             <small class="d-block mb-3 text-muted">&copy; NO RIGHTS RESERVED! 2020</small>
           </div>
           <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">Password Login</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">PHP Session</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">Logout</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">Forget password</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">Password complexibility check</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo/blob/main/FEATURES.MD#password-login">More to come</a></li>
-            </ul>
-          </div>
-      
+            
           <div class="col-6 col-md">
             <h5>About</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="https://thiesmueller.de">Me</a></li>
-              <li><a class="text-muted" href="https://github.com/td00/loginpagefoo">Git</a></li>
+              <li><a class="text-muted" href="https://about.hon19.xyz">About</a></li>
+              <li><a class="text-muted" href="https://github.com/hon19-xyz/login">Git</a></li>
               <li><a class="text-muted" href="https://thiesmueller.de/dsgvo/datenschmutz.html">Privacy</a></li>
               <li><a class="text-muted" href="https://thiesmueller.de/impress/">Imprint</a></li>
             </ul>
