@@ -13,6 +13,7 @@ $userln = $_SESSION['lastName'];
 $activated = $_SESSION['activated'];
 $isadmin = $_SESSION['isadmin'];
 $profilepicture = $_SESSION['profilepicture'];
+$liveshere = $_SESSION['lives_here'];
 
 //lets build a page:
 ?>
@@ -110,6 +111,19 @@ if ($isadmin == 0) { //if not admin, print "User" in green
 }
 if ($isadmin == 1) { //if admin, print so but in red
     echo '<p class="text-danger">Admin</p>';
+}
+echo "</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>";
+echo "Lives here:";
+echo "</td>";
+echo "<td>";
+if ($liveshere == 0) { //if not admin, print "User" in green
+    echo '<p class="text-danger">No</p><br>';
+}
+if ($liveshere == 1) { //if admin, print so but in red
+    echo '<p class="text-success">Yes</p>';
 }
 echo "</td>";
 echo "</tr>";

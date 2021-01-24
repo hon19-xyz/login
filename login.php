@@ -27,6 +27,7 @@ if(isset($_GET['login'])) { //same as register. looks for "?login=1" in the url
         $_SESSION['updated_at'] = $user['updated_at'];
         $_SESSION['isadmin'] = $user['isadmin'];
         $_SESSION['profilepicture'] = $user['profilepicture'];
+        $_SESSION['lives_here'] = $user['lives_here'];
         die('<div class="alert alert-success" role="alert"> successfull. go to: <a href="start.php">start page</a></div> <meta http-equiv="refresh" content="0; URL=start.php">'); //successful login, thats all.
     } else {
         $errorMessage = '<div class="alert alert-danger" role="alert">somethings wrong (maybe wrong password or wrong user)</div><br>'; //if password not match or username doesn't exist print this line

@@ -16,4 +16,5 @@ $_SESSION['activated'] = $user['activated'];
 $_SESSION['updated_at'] = $user['updated_at'];
 $_SESSION['isadmin'] = $user['isadmin'];
 $_SESSION['profilepicture'] = $user['profilepicture'];
+$_SESSION['lives_here'] = $user['lives_here'];
 ?>
