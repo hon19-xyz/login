@@ -103,7 +103,7 @@ $activated = $_SESSION['activated'];
     echo '<a href="?activation_req=1"><button class="btn btn-primary disabled">Activated Area</button></a>';
 }
 if ($activated == 1) { //if enabled, than activate the button & give it a real function.
-    echo '<a href="activatedarea.php"><button class="btn btn-lg btn-block btn-primary">Activated Area</button></a>';
+    echo '<a href="activatedarea/"><button class="btn btn-lg btn-block btn-primary">Activated Area</button></a>';
 }?>
       </div>
     </div>
@@ -162,7 +162,7 @@ if ($isadmin == 0) { //checks if admin privileges are granted. if not, just prin
     echo '<br>';
 }
 if ($isadmin == 1) { //if admin rights are granted, print a admin area button
-    echo '<a href="adminarea.php"><button class="btn btn-danger">Admin Area</button></a>';
+    echo '<a href="adminarea/"><button class="btn btn-danger">Admin Area</button></a>';
 }
 //footer and stuff 
 ?>
