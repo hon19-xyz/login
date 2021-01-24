@@ -31,7 +31,7 @@ $activated = $_SESSION['activated'];
         <a class="p-2 text-dark" href="https://github.com/td00/loginpagefoo">Git</a>
         <?php
       if($userid > 0){ //if the user is logged in (has a userid above 0) then print this:
-        echo 'Hi <a href="profile.php">'.$_SESSION['username'].'</a>';  
+        echo 'Hi <a href="me.php">'.$_SESSION['username'].'</a>';  
       }else{ //if there isn't a user session print a register button instead
       echo '<a class="p-2 text-dark" href="register.php">Register</a>';
     }
@@ -67,7 +67,7 @@ $activated = $_SESSION['activated'];
         <ul class="list-unstyled mt-3 mb-4">
           <li>Your Profile</li>
         </ul>
-        <a href="profile.php"><button type="button" class="btn btn-lg btn-block btn-primary">Profile</button></a>
+        <a href="me.php"><button type="button" class="btn btn-lg btn-block btn-primary">Profile</button></a>
       </div>
     </div>
         <?php  
