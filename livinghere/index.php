@@ -8,7 +8,7 @@
 <script src="ressources/js/bootstrap.min.js"></script>
 <?php
 session_start(); //check for a session
-if($_SESSION['living_here'] == 0) { //check if the account is activated, if not, die with an error
+if($_SESSION['lives_here'] == 0) { //check if the account is activated, if not, die with an error
     die ("You dont live here!");
 }
 echo "heres the real fun world"; //just a placeholder
