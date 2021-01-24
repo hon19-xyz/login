@@ -103,7 +103,7 @@ $activated = $_SESSION['activated'];
     echo '<a href="?activation_req=1"><button class="btn btn-primary disabled">Activated Area</button></a>';
 }
 if ($activated == 1) { //if enabled, than activate the button & give it a real function.
-    echo '<a href="activatedarea/"><button class="btn btn-lg btn-block btn-primary">Activated Area</button></a>';
+    echo '<a href="activated/"><button class="btn btn-lg btn-block btn-primary">Activated Area</button></a>';
 }?>
       </div>
     </div>
