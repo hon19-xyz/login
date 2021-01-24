@@ -24,16 +24,16 @@ if(isset($_GET['notimplemented'])) { //if "?notimplemented=1" is received, print
 //some html links to other pages
 ?>
 <br /><br />
-<a href="features/lights/"><button class="btn btn-primary">Lights</button></a>
+<a href="features/lights/"><button class="btn disabled btn-primary">Lights</button></a>
 <br /><br />
-<a href="features/sound/"><button class="btn btn-primary">Sounds</button></a>
+<a href="features/sound/"><button class="btn disabled btn-primary">Sounds</button></a>
 <br /><br />
-<a href="features/power/"><button class="btn btn-primary">Power</button></a>
+<a href="features/power/"><button class="btn disabled btn-primary">Power</button></a>
 <br /><br />
-<a href="features/"><button class="btn btn-success">Features</button></a>
+<a href="features/"><button class="btn disabled btn-success">Features</button></a>
 <br /><br />
-<a href="?notimplemented=1"><button class="btn btn-primary disabled">Change Description</button></a>
-<br /> <br /><br />
+<br /><br /> 
+
 <a href="start.php"><button class="btn btn-info">Back</button></a>
 </div>
 </div>
