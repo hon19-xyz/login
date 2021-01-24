@@ -1,7 +1,7 @@
 <!DOCTYPE html> 
 <html> 
 <head>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
    
   <title>Activate</title>    
 </head> 
@@ -49,7 +49,7 @@ if(isset($_GET['send'])) {
  }
 }
 ?>
-  <script src="ressources/js/bootstrap.min.js"></script>
+  <script src="/ressources/js/bootstrap.min.js"></script>
 <h1>Activate your user</h1>
 <form action="?send=1&amp;userid=<?php echo htmlentities($userid); ?>&amp;code=<?php echo htmlentities($code); ?>" method="post">
 <div class="form-group">

@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Living Here Area</title>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<script src="ressources/js/bootstrap.min.js"></script>
+<script src="/ressources/js/bootstrap.min.js"></script>
 <?php
 session_start(); //check for a session
 if($_SESSION['lives_here'] == 0) { //check if the account is activated, if not, die with an error
