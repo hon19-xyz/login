@@ -34,6 +34,6 @@ if(isset($_GET['notimplemented'])) { //if "?notimplemented=1" is received, print
 <br /><br />
 <br /><br /> 
 
-<a href="start.php"><button class="btn btn-info">Back</button></a>
+<a href="/"><button class="btn btn-info">Back</button></a>
 </div>
 </div>
