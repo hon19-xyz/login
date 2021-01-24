@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Admin Area</title>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<script src="ressources/js/bootstrap.min.js"></script>
+<script src="/ressources/js/bootstrap.min.js"></script>
 <?php
 session_start();
 //just a page to list all admin functions:
@@ -18,7 +18,7 @@ echo '<a href="useradmin.php"><button class="btn btn-primary">User Admin</button
 echo '<br /> <br />';
 echo '<a href="sessions.php"><button class="btni disabled btn-primary">Session Admin</button></a>';
 echo '<br /> <br />';
-echo '<a href="/admins/"><button class="btn btn-danger">Admin Admin</button></a>';
+echo '<a href="admins/"><button class="btn btn-danger">Admin Admin</button></a>';
 echo '<br /> <br />';
-echo '<a href="start.php"><button class="btn btn-info">Back</button></a>';
+echo '<a href=".."><button class="btn btn-info">Back</button></a>';
 ?>

@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Activated Area</title>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<script src="ressources/js/bootstrap.min.js"></script>
+<script src="/ressources/js/bootstrap.min.js"></script>
 <?php
 session_start(); //check for a session
 if($_SESSION['activated'] == 0) { //check if the account is activated, if not, die with an error
@@ -30,6 +30,6 @@ if(isset($_GET['notimplemented'])) { //if "?notimplemented=1" is received, print
 <br /><br />
 <a href="?notimplemented=1"><button class="btn btn-primary disabled">Change Description</button></a>
 <br /> <br /><br />
-<a href="start.php"><button class="btn btn-info">Back</button></a>
+<a href=".."><button class="btn btn-info">Back</button></a>
 </div>
 </div>

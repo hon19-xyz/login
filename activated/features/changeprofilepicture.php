@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Activated Area</title>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<script src="ressources/js/bootstrap.min.js"></script>
+<script src="/ressources/js/bootstrap.min.js"></script>
 <?php
 session_start();
 include 'db.inc.php';
@@ -63,6 +63,6 @@ if(isset($_GET['new'])) {
  <button type="submit" class="btn btn-primary">Submit new Image</button>
 </form>
 <br /> <br /><br />
-<a href="activatedarea.php"><button class="btn btn-info">Back</button></a>
+<a href=".."><button class="btn btn-info">Back</button></a>
 </div>
 </div>

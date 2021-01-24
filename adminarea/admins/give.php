@@ -2,10 +2,10 @@
 <html>
 <head>
 <title>Admin Area</title>
-<link rel="stylesheet" href="ressources/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="/ressources/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-<script src="ressources/js/bootstrap.min.js"></script>
+<script src="/ressources/js/bootstrap.min.js"></script>
 <?php
 session_start();
 include 'backgroundupdate.php';
@@ -68,5 +68,5 @@ endif;
 ?>
 <?php
 echo '<br /> <br />';
-echo '<a href="adminarea.php"><button class="btn btn-info">Back</button></a>';
+echo '<a href="."><button class="btn btn-info">Back</button></a>';
 ?>
